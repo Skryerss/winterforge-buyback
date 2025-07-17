@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Winter Forge Syndicate - Buyback Terminal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo_wfs.png" />
+</head>
+<body>
+  <header>
+    <img src="logo_wfs.png" alt="WFS Logo" class="logo"/>
+    <h1>Winter Forge Syndicate</h1>
+    <p class="subtitle">Buyback Terminal – Convert your Ore to ISK</p>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <h2>📋 Votre inventaire</h2>
+      <textarea id="inventoryInput" placeholder="Ex:
+1000 Tritanium
+200 Mexallon"></textarea>
+      <button onclick="parseInventory()">💰 Calculer</button>
+    </section>
+
+    <section id="results"></section>
+
+    <section id="contractInfo" style="display:none;">
+      <h2>📦 Infos Contrat</h2>
+      <ul>
+        <li><strong>Destinataire :</strong> Sorn Talvek</li>
+        <li><strong>Station :</strong> Jita IV - Moon 4 - Caldari Navy Assembly Plant</li>
+        <li><strong>Durée :</strong> 7 jours</li>
+        <li><strong>Type :</strong> Contrat d'achat (item exchange)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Winter Forge Syndicate — EVE Online Buyback Service
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
